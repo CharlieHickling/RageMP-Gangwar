@@ -1,4 +1,4 @@
-/*var PlayerClass = require("./users/player.js")
+var PlayerClass = require("./users/player.js")
 var Gangwar = require("./users/gangwar.js")
 var Weapons = require("./users/weapons.js")
 var getDeathReason = require("./libs/death_reasons.js")
@@ -250,15 +250,3 @@ mp.events.addCommand("savepos", (player, name = "No name") => {
         }
     });
 });
-// Whitelist
-/*var whitelist = [];
-whitelist["D8903A045BF42390639CC9E0E2BA87B0751831481AC087C818500A1C43C49B406BAC51A0D2425FB8ED383938CAC01F905810DA342B9413F073BCD960C2209240"] = true;
-whitelist["D8903A045B1277887AAA8FC4D9B6B3B0EC8415882F0A6DA80CF018C8DD225D20519453D4478EFB88E3386674322AA110571808A056B6E9A8C91AAEFC194E1880"] = true;
-whitelist["E3C485E0B5B25B08FCAE97042F30B2A0CB322FBC8A7A4898BB521B10DF563560281CBECC755E95506FB07BC4492E24101566912086DCCDB88D6E166418463FC0"] = true;
-whitelist["D8903A045B8E3F00F3C279887E2EFFB075D057485D528AF018500A1C43C617007BFA81988EC697B8ED908F3835DA1AE05810DA342BFEEF00033289A89EB48A40"] = true;
-mp.events.add('playerJoin', player => {
-    console.log(`${player.name} ${player.serial}`)
-    if (!whitelist[player.serial]) {
-        player.kick("");
-    }
-});*/
